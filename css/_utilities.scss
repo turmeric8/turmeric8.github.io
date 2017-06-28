@@ -1,0 +1,88 @@
+/*------------- UTILITY CLASSES -------------*/
+
+@mixin atSmall {
+    @media screen and (min-width: 768px) {
+        @content
+    }
+}
+
+@mixin atMedium {
+    @media screen and (min-width: 992px) {
+        @content
+    }
+}
+
+@mixin atLarge {
+    @media screen and (min-width: 1200px) {
+        @content
+    }
+}
+
+@mixin atExtralarge {
+    @media screen and (min-width: 1400px) {
+        @content
+    }
+}
+
+@mixin linkStates($decoration, $color) {
+    &:link,
+    &:hover,
+    &:focus,
+    &:visited {
+        text-decoration: $decoration;
+        color: $color;
+    }
+}
+
+.container {
+    max-width: 1097px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    display: inline-block;
+}
+
+.section {
+    &--bg {
+        background-color: $gray;
+    }
+    &__copy {
+        max-width: 910px;
+        margin: 0 auto;
+        text-align: left;
+        &--center {
+            text-align: center;
+        }
+    }
+    &__title {
+        font-family: $title;
+        font-size: 2.5rem;
+        letter-spacing: 0.05em;
+        color: $brand;
+        margin-bottom: 2.08333rem;
+        @include atSmall {
+            font-size: 1.875rem;
+            margin-bottom: 1.5625rem;
+        }
+    }
+    &__text {
+        font-family: $roman;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $text;
+        @include atSmall {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+        }
+        &--accent {
+            font-family: $bold;
+        }
+        & + & {
+            margin-top: 2.0833rem;
+            @include atSmall {
+                margin-top: 1.5625rem;
+            }
+        }
+    }
+}

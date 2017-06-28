@@ -1,0 +1,162 @@
+.choose {
+    padding: 7.5rem 15px 10rem 15px;
+    @include atSmall {
+        padding: 5.625rem 15px 7.5rem 15px;
+    }
+    &__img-wrapper {
+        text-align: center;
+    }
+    &__content {
+        padding-top: 3rem;
+        text-align: center;
+        @include atSmall {
+            padding-top: 0;
+        }
+    }
+    &__title {
+        font-family: $title;
+        color: $brand;
+        font-size: 3rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        @include atSmall {
+            font-size: 2.25rem;
+        }
+    }
+    &__form {
+        margin: 3.75rem auto 2.0833rem auto;
+        max-width: 480px;
+        position: relative;
+        @include atSmall {
+            margin: 2.8125rem auto 1.5625rem auto;
+        }
+    }
+    &__dropdown {
+        cursor: pointer;
+        appearance: none;
+        font-family: $condensed;
+        color: $black;
+        font-size: 2rem;
+        line-height: 6.667rem;
+        border-radius: 3px;
+        border: 3px solid $black;
+        height: 6.667rem;
+        width: 100%;
+        padding: 0 1.5625rem;
+        background-color: $white;
+        @include atSmall {
+            font-size: 1.5rem;
+            height: 5rem;
+            line-height: 5rem;
+        }
+        &:focus {
+            outline: none;
+        }
+        &-arrow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 6.667rem;
+            width: 6.667rem;
+            background-color: $black;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            pointer-events: none;
+            background-image: url("../images/dropdown-arrow.svg");
+            background-position: center;
+            background-size: 1.75rem auto;
+            background-repeat: no-repeat;
+            @include atSmall {
+                background-size: 1.3125rem auto;
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    }
+    &__promo {
+        max-width: 480px;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include atSmall {
+            margin-bottom: 1.875rem;
+        }
+        &-item {
+            cursor: pointer;
+            width: 33.33%;
+            padding: 0.75rem 0 0.5rem 0;
+            border-radius: 3px;
+            border: 3px solid $gray-border-dark;
+            & + & {
+                margin-left: 1.5rem;
+                @include atSmall {
+                    margin-left: 1.125rem;
+                }
+            }
+            &--accent {
+                border-color: $brand;
+                .choose__promo-title {
+                    color: $black;
+                }
+            }
+        }
+        &-title {
+            font-family: $condensed;
+            color: $gray-dark;
+            font-size: 1.833rem;
+            &--accent {
+                font-family: $bold-condensed;
+                font-size: 1.375rem;
+            }
+        }
+    }
+    &__ingredients {
+        text-align: center;
+        font-family: $light-condensed;
+        color: $black;
+        font-size: 1.5rem;
+        max-width: 255px;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+        @include atSmall {
+            font-size: 1.125rem;
+            margin-bottom: 1.875rem;
+        }
+        &-title {
+            display: block;
+            font-family: $bold-condensed;
+        }
+    }
+    &__btn {
+        height: 6.41667rem;
+        line-height: 7rem;
+        background-color: $brand;
+        width: 100%;
+        max-width: 470px;
+        margin: 0 auto;
+        display: block;
+        font-size: 3rem;
+        font-family: $bold-condensed;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 1.667rem;
+        @include atSmall {
+            font-size: 2.25rem;
+            height: 4.8125rem;
+            line-height: 5.3rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+    &__info {
+        color: $gray-dark;
+        font-family: $light-condensed-ob;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        @include atSmall {
+            font-size: 1.5rem;
+            line-height: 1.875rem;
+        }
+    }
+}

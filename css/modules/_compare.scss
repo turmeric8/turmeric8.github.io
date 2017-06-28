@@ -1,0 +1,103 @@
+.compare {
+    padding: 6.25rem 15px 7.08333rem 15px;
+    text-align: center;
+    background-color: $gray;
+    @include atSmall {
+        padding: 4.6875rem 15px 5.3125rem 15px;
+    }
+    &__title {
+        font-family: $title;
+        color: $brand;
+        font-size: 3rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 4.5833rem;
+        @include atSmall {
+            font-size: 2.25rem;
+            margin-bottom: 2.4375rem;
+        }
+    }
+    &__tables {
+        @include atSmall {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    &__table {
+        padding-bottom: 3.333rem;
+        width: 100%;
+        @include atSmall {
+            width: 25%;
+            padding-bottom: 2.5rem;
+        }
+        & + & {
+            @include atSmall {
+                border-left: 1px solid $gray-border;
+            }
+        }
+        &-logo {
+            max-width: 267px;
+        }
+        &--main {
+            @include atSmall {
+                width: 50%;
+            }
+            .compare__table {
+                &-header {
+                    padding: 2rem 0 3rem 0;
+                    @include atSmall {
+                        padding: 1.5rem 0 3.15rem 0;
+                    }
+                    @include atMedium {
+                        padding-bottom: 3.55rem;
+                    }
+                    @include atLarge {
+                        padding-bottom: 3.8rem;
+                    }
+                }
+            }
+        }
+        &-header {
+            padding: 2.9167rem 15px 5.4167rem 15px;
+            @include atSmall {
+                padding: 2.1875rem 15px 4.0625rem 15px;
+            }
+        }
+        &-title {
+            font-family: $heavy-condensed;
+            color: $black;
+            font-size: 2.833rem;
+            letter-spacing: 0.02em;
+            @include atSmall {
+                font-size: 2.125rem;
+            }
+        }
+        &-subtitle {
+            font-family: $heavy-condensed;
+            color: $black;
+            font-size: 1.5rem;
+            letter-spacing: 0.02em;
+            @include atSmall {
+                font-size: 1.125rem;
+            }
+        }
+        &-content {
+            &-item {
+                font-family: $condensed;
+                color: $black;
+                font-size: 1.667rem;
+                line-height: 4rem;
+                letter-spacing: 0.02em;
+                border-bottom: 1px solid $gray-border;
+                @include atSmall {
+                    font-size: 1.25rem;
+                    line-height: 3rem;
+                }
+                &--accent {
+                    font-family: $bold-condensed;
+                }
+            }
+        }
+    }
+}

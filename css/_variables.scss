@@ -1,0 +1,97 @@
+// Font imports and stacks
+@font-face {
+  font-family: 'Caprese';
+  src: url('../fonts/Caprese-Regular.woff2') format('woff2'),
+       url('../fonts/Caprese-Regular.woff') format('woff'),
+       url('../fonts/Caprese-Regular.ttf')  format('truetype'),
+       url('../fonts/Caprese-Regular.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
+
+@font-face {
+    font-family: "BoldCondensed";
+    src: url("../fonts/HelveticaNeueLTStd-BdCn.otf");
+}
+
+@font-face {
+    font-family: "Roman";
+    src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
+}
+
+@font-face {
+    font-family: "Heavy";
+    src: url("../fonts/HelveticaNeueLTStd-Hv.otf");
+}
+
+@font-face {
+    font-family: "HeavyCondensedOblique";
+    src: url("../fonts/HelveticaNeueLTStd-HvCnO.otf");
+}
+
+@font-face {
+    font-family: "LightCondensedOblique";
+    src: url("../fonts/HelveticaNeueLTStd-LtCnO.otf");
+}
+
+@font-face {
+    font-family: "Condensed";
+    src: url("../fonts/HelveticaNeueLTStd-Cn.otf");
+}
+
+@font-face {
+    font-family: "LightCondensed";
+    src: url("../fonts/HelveticaNeueLTStd-LtCn.otf");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
+}
+
+@font-face {
+    font-family: "BlackCondensedOblique";
+    src: url("../fonts/HelveticaNeueLTStd-BlkCnO.otf");
+}
+
+@font-face {
+    font-family: "HeavyCondensed";
+    src: url("../fonts/HelveticaNeueLTStd-HvCn.otf");
+}
+
+@font-face {
+    font-family: "BoldCondensedOblique";
+    src: url("../fonts/HelveticaNeueLTStd-BdCnO.otf");
+}
+
+$title: "Caprese", sans-serif;
+$bold: "Bold", sans-serif;
+$bold-condensed: "BoldCondensed", sans-serif;
+$roman: "Roman", sans-serif;
+$heavy: "Heavy", sans-serif;
+$heavy-condensed-ob: "HeavyCondensedOblique", sans-serif;
+$light-condensed-ob: "LightCondensedOblique", sans-serif;
+$condensed: "Condensed", sans-serif;
+$light-condensed: "LightCondensed", sans-serif;
+$light: "Light", sans-serif;
+$black-condensed-ob: "BlackCondensedOblique", sans-serif;
+$heavy-condensed: "HeavyCondensed", sans-serif;
+$bold-condensed-ob: "BoldCondensedOblique", sans-serif;
+
+// Colors
+$brand: #f37325;
+$brand-light: #f35e2d;
+$brand-dark: #b93b1b;
+$brand-alt: #db9613;
+$red: #c01910;
+$white: #ffffff;
+$text: #2b2517;
+$text-gray: #cacac9;
+$gray: #f6f6f6;
+$gray-border: #dad9d8;
+$gray-border-dark: #b5b6b6;
+$gray-dark: #939493;
+$black: #000000;

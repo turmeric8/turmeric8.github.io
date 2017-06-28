@@ -1,0 +1,6 @@
+.about {
+    padding: 2.5rem 0 6.6667rem 0;
+    @include atSmall {
+        padding: 1.875rem 0 5rem 0;
+    }
+}

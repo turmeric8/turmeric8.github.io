@@ -1,0 +1,38 @@
+.feature {
+    padding: 6.25rem 15px 7.0833rem 15px;
+    @include atSmall {
+        padding: 4.6975rem 15px 4.6875rem 15px;
+    }
+    @include atMedium {
+        padding-bottom: 1.5625rem;
+    }
+    &--nopadding {
+        padding-bottom: 0;
+        .section__copy {
+            padding-bottom: 4.6875rem;
+            margin-top: 4rem;
+            @include atSmall {
+                margin-top: 0;
+            }
+        }
+        .feature__row {
+            @include atSmall {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+    &__img-wrapper {
+        margin-top: 2rem;
+        text-align: center;
+        @include atSmall {
+            margin-top: -100px;
+        }
+        @include atMedium {
+            margin-top: -120px;
+        }
+        &--alt {
+            text-align: center;
+        }
+    }
+}
