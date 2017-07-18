@@ -22,7 +22,7 @@ $(document).ready(function () {
         {
             value: "120g Turmeric Latte",
             prices: ["$24.95ea", "$23.70ea", "$21.20ea"],
-            ingredients: "Cold Dried Turmeric (8% Curcumin), Coconut Milk Powder, Ceylon Cinnamon, Cayenne Pepper, Ginger, Black Pepper, Monk Fruit"
+            ingredients: "Cold Dried Turmeric (8% Curcumin), Ceylon Cinnamon, Ginger, Black Pepper, Monk Fruit"
         },
         {
             value: "100g Turmeric Powder",
