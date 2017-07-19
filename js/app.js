@@ -21,17 +21,17 @@ $(document).ready(function () {
     var options = [
         {
             value: "120g Turmeric Latte",
-            prices: ["$24.95ea", "$23.70ea", "$21.20ea"],
+            prices: ["$19.95ea", "$18.95ea", "$17.95ea"],
             ingredients: "Cold Dried Turmeric (8% Curcumin), Ceylon Cinnamon, Ginger, Black Pepper, Monk Fruit"
         },
         {
             value: "100g Turmeric Powder",
-            prices: ["$24.95ea", "$23.70ea", "$21.20ea"],
+            prices: ["$19.95ea", "$18.95ea", "$17.95ea"],
             ingredients: "100% Cold Dried Turmeric (8% Curcumin)"
         },
         {
             value: "120 Turmeric Capsules",
-            prices: ["$29.95ea", "$28.45ea", "$25.45ea"],
+            prices: ["$26.95ea", "$25.60ea", "$24.25ea"],
             ingredients: "Cold Dried Turmeric (8% Curcumin), Black Pepper, Vegetable Capsule"
         }
     ];
