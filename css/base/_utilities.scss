@@ -1,0 +1,124 @@
+// Font weight
+.u-weight {
+    &-reg {
+        font-weight: 400;
+    }
+
+    &-bld {
+        font-weight: 700;
+    }
+}
+
+
+// Font family
+.u-font {
+    &-main {
+        font-family: $font-main;
+    }
+
+    &-titles {
+        font-family: $font-titles;
+    }
+}
+
+
+// Color
+.u-color {
+    &-primary {
+        color: $color-primary;
+    }
+
+    &-white {
+        color: $color-white;
+    }
+}
+
+
+// Flex
+.u-flex {
+    &-md {
+        @include atMedium {
+            &-grow {
+                flex: 1;
+            }
+        }
+    }
+}
+
+
+// Margin
+.u-margin {
+    &-bottom {
+        &-smallest {
+            margin-bottom: 10px;
+        }
+
+        &-small {
+            margin-bottom: 2.083rem;
+            @include atMedium {
+                margin-bottom: 1.5625rem;
+            }
+        }
+
+        &-med {
+            margin-bottom: 2.5rem;
+            @include atMedium {
+                margin-bottom: 1.875rem;
+            }
+        }
+
+        &-huge {
+            margin-bottom: 4.375rem;
+
+            &-2 {
+                margin-bottom: 4rem;
+                @include atMedium {
+                    margin-bottom: 7rem;
+                }
+            }
+        }
+    }
+
+    &-md {
+        @include atMedium {
+            &-bottom {
+                &-null {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Padding
+.u-padding {
+    &-md {
+        @include atMedium {
+            &-horizontal {
+                &-big {
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Opacity
+.u-opacity {
+    &-8 {
+        opacity: .8;
+    }
+}
+
+
+// Alignment
+.u-align {
+    &-inline {
+        &-center {
+            text-align: center;
+        }
+    }
+}

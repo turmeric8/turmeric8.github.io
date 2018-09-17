@@ -1,0 +1,60 @@
+.heading-primary {
+    font-family: $font-titles;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: $color-white;
+    font-weight: 700;
+    @include atMedium {
+        font-size: 2.25rem;
+        line-height: 2.8125rem;
+    }
+}
+
+.heading-secondary {
+    font-family: $font-titles;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $color-dark;
+    font-weight: 700;
+    @include atMedium {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}
+
+.heading-tertiary {
+    font-family: $font-titles;
+    font-size: 1.5rem;
+    line-height: 1.9167rem;
+    color: $color-dark;
+    font-weight: 700;
+    @include atMedium {
+        font-size: 1.125rem;
+        line-height: 1.4375rem;
+    }
+}
+
+.paragraph {
+    font-family: $font-main;
+    font-size: 1.167rem;
+    line-height: 1.833rem;
+    color: $color-dark;
+    @include atMedium {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+
+    &--small {
+        font-size: 1rem;
+        @include atMedium {
+            font-size: .75rem;
+        }
+    }
+
+    &--big {
+        font-size: 1.333rem;
+        @include atMedium {
+            font-size: 1rem;
+        }
+    }
+}

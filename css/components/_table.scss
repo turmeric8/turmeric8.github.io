@@ -1,0 +1,40 @@
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 100%;
+    table-layout: fixed;
+
+    th,
+    td {
+        padding: 1.25rem 8px;
+        vertical-align: middle;
+        width: 25%;
+        @include atSmall {
+            padding: .9375rem 8px;
+        }
+    }
+
+    th {
+        font-weight: 400;
+        opacity: .4;
+        @extend .paragraph;
+    }
+
+    td {
+        color: $color-black;
+        font-weight: 400;
+        transition: all .25s;
+        border-bottom: 1px solid $color-gray;
+        @extend .paragraph;
+        @extend .paragraph--big;
+
+        &:hover {
+            box-shadow: inset 0 -1px 0 $color-primary;
+            color: $color-primary;
+            border-bottom-color: $color-primary;
+        }
+    }
+}

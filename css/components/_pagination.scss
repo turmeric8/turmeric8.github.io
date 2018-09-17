@@ -1,0 +1,110 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include atMedium {
+        flex-wrap: nowrap;
+    }
+
+    &__btn {
+        color: $color-dark;
+        padding: 5px 1.333rem;
+        border: 1px solid $color-gray-lgt;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .25s;
+        width: 50%;
+        @extend .paragraph;
+        @include linkStates($color-dark, none);
+        @include atMedium {
+            padding: 7px 1rem;
+            width: auto;
+        }
+
+        &-icon {
+            margin-left: 9px;
+            transition: all .25s;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: $color-white;
+
+            .pagination__btn-icon {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        &--prev {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            order: 3;
+            @include atMedium {
+                order: 1;
+            }
+
+            .pagination__btn {
+                &-icon {
+                    margin-left: 0;
+                    margin-right: 9px;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        
+        &--next {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            order: 3;
+            border-left-width: 0;
+            @include atMedium {
+                order: 3;
+                border-left-width: 1px;
+            }
+        }
+    }
+
+    &__pages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px 1rem 10px;
+        order: 1;
+        @include atMedium {
+            justify-content: center;
+            margin: 0 10px;
+            order: 2;
+        }
+
+        &-item {
+            & + & {
+                margin-left: 10px;
+            }
+        }
+
+        &-link {
+            padding: 3px 7px;
+            display: inline-block;
+            border-radius: 5px 0;
+            @include linkStates($color-dark, none);
+            @extend .paragraph;
+            @extend .paragraph--big;
+
+            &--active,
+            &:hover {
+                background-color: $color-primary;
+                color: $color-white;
+                @include linkStates($color-white, none);
+            }
+
+            &--active {
+                &:hover {
+                    background-color: darken($color-primary, 10%);
+                }
+            }
+        }
+    }
+}

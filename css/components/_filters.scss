@@ -1,0 +1,72 @@
+.filters {
+    background-color: $color-primary-lgt;
+    padding: 1.9167rem;
+    @include atMedium {
+        padding: 1.4375rem;
+    }
+
+    &__form {
+        @include atMedium {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 0 3.125rem;
+            margin: 0 -.9375rem;
+        }
+
+        &-group {
+            @include atMedium {
+                flex: 1;
+                margin: 0 .9375rem;
+            }
+
+            select {
+                background-image: url("../images/i-dropdown-arrows.svg");
+                background-repeat: no-repeat;
+                background-size: auto 10px;
+                background-position: calc(100% - 1rem) calc(50% - .5rem);
+                @include atMedium {
+                    background-position: calc(100% - 1rem) calc(50% - .25rem);
+                }
+            }
+
+            select,
+            input {
+                appearance: none;
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid $color-dark;
+                padding-bottom: 1rem;
+                background-color: transparent;
+                display: block;
+                width: 100%;
+                height: 100%;
+                @extend .paragraph;
+                @include atMedium {
+                    padding-bottom: .75rem;
+                }
+
+                &::placeholder {
+                    color: $color-dark;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &:last-child {
+                @include atMedium {
+                    flex: 0 0 0;
+                }
+            }
+
+            & + & {
+                margin-top: 2.5rem;
+                @include atMedium {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

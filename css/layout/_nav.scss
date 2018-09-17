@@ -1,0 +1,68 @@
+.nav {
+    display: none;
+    text-align: center;
+    @include atMedium {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        margin-top: 2rem;
+        width: 100%;
+        @include atMedium {
+            margin-top: 0;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 30px;
+        }
+        @include atLarge {
+            margin-left: 6.75rem;
+        }
+
+        &-item {
+            @extend .paragraph;
+            @extend .paragraph--big;
+
+            & + & {
+                @include atMedium {
+                    margin-left: 1.35rem;
+                    margin-top: 0;
+                }
+                @include atLarge {
+                    margin-left: 1.875rem;
+                }
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            padding: 1rem 3.333rem;
+            border-radius: 2rem 0;
+            @include linkStates($color-white, none);
+            @include atMedium {
+                padding: 0;
+            }
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-primary;
+                font-weight: 700;
+                @include atMedium {
+                    font-weight: 400;
+                    background: transparent;
+                    color: darken($color-primary, 10%);
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin: 1rem auto 0 auto;
+        @include atMedium {
+            margin: 0;
+        }
+    }
+}

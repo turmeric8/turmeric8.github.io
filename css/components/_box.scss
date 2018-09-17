@@ -1,0 +1,11 @@
+.box {
+    background-color: $color-white;
+    border-radius: 5rem 10px;
+    box-shadow: 0 2px 12px 0 rgba($color-black, .06);
+    padding: 3rem 3rem 1.875rem 3rem;
+    @include atSmall {
+        border-radius: 8.75rem 10px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

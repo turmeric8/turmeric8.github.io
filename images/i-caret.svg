@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/ic_arrow_black" transform="translate(-2.000000, 0.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Rectangle-3">
+                <path d="M3.70710678,0.640016899 L5.89776145,2.83067157 C6.54356371,3.47647383 6.54356371,4.52352617 5.89776145,5.16932843 L3.70710678,7.3599831 C3.31658249,7.75050739 2.68341751,7.75050739 2.29289322,7.3599831 C2.10535684,7.17244672 2,6.91809281 2,6.65287632 L2,1.34712368 C2,0.79483893 2.44771525,0.34712368 3,0.34712368 C3.26521649,0.34712368 3.5195704,0.45248052 3.70710678,0.640016899 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

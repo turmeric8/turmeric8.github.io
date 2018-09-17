@@ -1,0 +1,17 @@
+.text-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .25s;
+    backface-visibility: hidden;
+
+    &__label {
+        margin-right: 4px;
+    }
+
+    &--forwards {
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+}
